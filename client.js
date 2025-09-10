@@ -24,6 +24,9 @@ function addMessage(msg) {
   let p = document.createElement('p');
   p.textContent = msg;
   chat.appendChild(p);
+
+
+  chat.scrollTop = chat.scrollHeight;
 }
 
 document.getElementById('button').addEventListener('click', () => {
